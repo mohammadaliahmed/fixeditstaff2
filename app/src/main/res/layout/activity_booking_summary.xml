@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/back"
+
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/ic_back_arrow" />
+
+        <TextView
+            android:id="@+id/serviceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="5dp"
+            android:text="Booking Summary"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="70dp"
+            android:background="#000" />
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/homelogo" />
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="20dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/button_blue_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:text="Requested Service "
+
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/serviceType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:text="Plumbing"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:padding="1dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50dp"
+                    android:text="Service Name"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="50dp"
+                    android:gravity="right"
+                    android:text="Quantity"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="50dp"
+
+                        android:text="Date"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="50dp"
+                        android:gravity="right"
+                        android:text="1st march 2019"
+                        android:textColor="#000" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:background="#000" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="50dp"
+
+                        android:text="Time"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="50dp"
+                        android:gravity="right"
+                        android:text="12:40"
+                        android:textColor="#000" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:background="#000" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="30dp"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+
+                        android:layout_marginLeft="50dp"
+                        android:text="Building Type"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/buildingType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="50dp"
+                        android:gravity="right"
+                        android:text="Residential"
+                        android:textColor="#000" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:background="#000" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:text="00:13:10"
+                    android:id="@+id/timer"
+                    android:layout_margin="5dp"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/start"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/button_green_bg"
+                    android:inputType="text"
+                    android:text="Start"
+                    android:textColor="#fff" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:id="@+id/invoiceOk"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_green_bg"
+                        android:inputType="text"
+                        android:text="Invoice Ok"
+                        android:textColor="#fff"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:layout_width="0dp"
+
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:id="@+id/invoiceModify"
+                        android:background="@drawable/button_green_bg"
+                        android:inputType="text"
+                        android:text="Invoice modify"
+                        android:textColor="#fff"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:id="@+id/pictures"
+                        android:background="@drawable/button_green_bg"
+                        android:inputType="text"
+                        android:text="Pictures"
+                        android:textColor="#fff"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/next"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_marginLeft="50dp"-->
+    <!--android:layout_marginTop="100dp"-->
+    <!--android:layout_marginRight="50dp"-->
+    <!--android:layout_marginBottom="20dp"-->
+    <!--android:background="@drawable/button_green_bg">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:padding="5dp"-->
+    <!--android:text="Next"-->
+    <!--android:textColor="#fff" />-->
+    <!--</RelativeLayout>-->
+
+</RelativeLayout>

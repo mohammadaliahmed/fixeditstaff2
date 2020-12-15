@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/back"
+
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/ic_back_arrow" />
+
+        <TextView
+            android:id="@+id/serviceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="5dp"
+            android:text="Assignment"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="70dp"
+            android:background="#000" />
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/homelogo" />
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/button_blue_bg"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="Before Service "
+
+                android:textColor="#000" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/beforeRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/beforeUploadBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/pickBeforePictures"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_green_bg"
+                    android:inputType="text"
+                    android:text="Take pictures"
+                    android:textColor="#fff"
+
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/uploadBefore"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_green_bg"
+                    android:inputType="text"
+                    android:text="Upload"
+                    android:textColor="#fff"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="20dp"
+                android:background="#aaa" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/button_blue_bg"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="After Service "
+
+                android:textColor="#000" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/afterRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <LinearLayout
+                android:id="@+id/afterUploabtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/pickAfterPictures"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_green_bg"
+                    android:inputType="text"
+                    android:text="Take pictures"
+                    android:textColor="#fff"
+
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/uploadAfter"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/button_green_bg"
+                    android:inputType="text"
+                    android:text="Upload"
+                    android:textColor="#fff"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="20dp"
+                android:background="#aaa" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/button_blue_bg"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="Material Bill"
+
+                android:textColor="#000" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/shopBill"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/add_picture" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:text="At shop" />
+
+                    <Button
+                        android:id="@+id/uploadShopBill"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_green_bg"
+                        android:inputType="text"
+                        android:text="Upload"
+                        android:textColor="#fff"
+
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="10dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/clientBill"
+                        android:layout_width="80dp"
+                        android:scaleType="centerCrop"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/add_picture" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:text="Client Signed" />
+
+                    <Button
+                        android:id="@+id/uploadClientBill"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_green_bg"
+                        android:inputType="text"
+                        android:text="Upload"
+                        android:textColor="#fff"
+
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/wholeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.8"
+        android:background="#fff"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/progressbar_spinner_rotate" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progress"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:text="Uploading pictures.." />
+
+
+    </RelativeLayout>
+</RelativeLayout>

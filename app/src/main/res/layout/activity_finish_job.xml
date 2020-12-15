@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/back"
+
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/ic_back_arrow" />
+
+            <TextView
+                android:id="@+id/serviceName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="5dp"
+                android:text="Finish Job"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30sp"
+                android:layout_marginRight="70dp"
+                android:background="#000" />
+
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/homelogo" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="@drawable/button_blue_bg"
+                android:gravity="center"
+                android:text="Finish"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/grey_black_bg"
+                    android:gravity="center"
+                    android:text="Total Time"
+                    android:textColor="#000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/totalTime"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/grey_black_bg"
+                    android:gravity="center"
+                    android:text="Finish"
+                    android:textColor="#000"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/grey_black_bg"
+                    android:gravity="center"
+                    android:text="Service Charges"
+                    android:textColor="#000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/serviceCharges"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/grey_black_bg"
+                    android:gravity="center"
+                    android:text="Finish"
+                    android:textColor="#000"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/grey_black_bg"
+                    android:gravity="center"
+                    android:text="Enter Material bill"
+                    android:textColor="#000"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/materialBill"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/grey_black_bg"
+                    android:gravity="center"
+                    android:hint="Enter amount"
+                    android:inputType="number"
+                    android:textColor="#000"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/grey_black_bg"
+                    android:gravity="center"
+                    android:text="Tax"
+                    android:textColor="#000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tax"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/grey_black_bg"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:text="0%"
+                    android:textColor="#000"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="*10% material bill is being charged" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:textSize="12sp"
+                android:id="@+id/couponApplied"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:text="*coupon code has been applied" />
+
+
+            <TextView
+                android:id="@+id/totalBill"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/grey_black_bg"
+                android:gravity="center"
+                android:text="Total Bill Amount"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/notifyClient"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/button_yellow_bg"
+                android:gravity="center"
+
+                android:inputType="text"
+                android:paddingLeft="20dp"
+
+                android:paddingRight="20dp"
+                android:text="Notify Client about invoice"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/paymentReceived"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="5dp"
+
+                android:background="@drawable/green_black_bg"
+                android:gravity="center"
+                android:inputType="text"
+                android:text="Payment Received"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="5dp"
+            android:text="Staff Login"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="70dp"
+            android:background="#000" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/homelogo" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_centerVertical="true">
+
+
+        <RelativeLayout
+            android:id="@+id/usernameR"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/hex_red">
+
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="30dp"
+                android:backgroundTint="#fff"
+                android:hint="Username"
+                android:inputType="text"
+                android:textColor="#fff"
+                android:textColorHint="#ececec"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/login"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/usernameR"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="-100dp"
+            android:background="@drawable/hex_grey"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="90dp"
+                android:text="Log In"
+                android:textColor="#fff" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/signUp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/usernameR"
+
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/hex_green">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="30dp"
+                android:backgroundTint="#fff"
+                android:hint="Password"
+                android:inputType="textPassword"
+
+                android:textColor="#fff"
+                android:textColorHint="#ececec"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
